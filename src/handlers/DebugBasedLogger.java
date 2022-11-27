@@ -27,11 +27,9 @@ public class DebugBasedLogger implements Logger {
 	public void logMessage(LoggerRequest request, String msg) {
 		if(this.levels <= request.getLoggingRequestNumber()){  
 	            displayLogInfo(msg);  
-	    }  
-	    if (nextLevelLogger!=null) {  
-	    	nextLevelLogger.logMessage(request, msg);  
-	    }  
-		
+	    	}  
+	   	if (nextLevelLogger!=null) {  
+	    		nextLevelLogger.logMessage(request, msg);  
+	    	}  
 	}
-
 }
