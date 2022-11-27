@@ -11,6 +11,6 @@ public interface Logger {
 	public void logMessage(LoggerRequest request, String msg) ;
 
 	//display corresponding information 
-	public abstract void displayLogInfo(String msg); 
+	public void displayLogInfo(String msg); 
 
 }
