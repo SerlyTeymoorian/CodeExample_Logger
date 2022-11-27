@@ -27,7 +27,7 @@ public class ErrorBasedLogger implements Logger {
 	public void logMessage(LoggerRequest request, String msg) {
 		
 		if(this.levels <= request.getLoggingRequestNumber()){  
-            displayLogInfo(msg);  
+          		displayLogInfo(msg);  
 		}  
 		if (nextLevelLogger!=null) {  
 			nextLevelLogger.logMessage(request, msg);  
