@@ -4,6 +4,7 @@ public class LoggerRequest {
 	
 	private int loggingRequestNumber; 
 	
+	//get the level based on the request
 	public LoggerRequest(String msg) {
 		
 		if(msg.equals("OutputInfo")) {
@@ -17,6 +18,7 @@ public class LoggerRequest {
 		}
 	}
 	
+	//return the level 
 	public int getLoggingRequestNumber() {
 		
 		return loggingRequestNumber; 
